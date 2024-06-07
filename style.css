@@ -10,103 +10,238 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 25%;
-    background:white;
-    z-index: -1;
-    background-image: url(images/banner.png);
+    height: 55%;
+    z-index: 1; /* Ensure this is lower than the logo's z-index */
+    overflow: hidden; /* Ensure the pseudo-elements do not overflow */
+}
+
+.overlay2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: url(images/banner.png) no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Ensure this is lower than the overlay's z-index */
+}
+
+.overlay2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control dimness */
+    z-index: -1; /* Ensure this is lower than the overlay's z-index */
 }
 
 .logo2 {
-    max-width: 250px; 
-    margin-bottom: 40px;
-    position: relative; 
-    right: 65%;
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the right */
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 3; /* Ensure this is higher than other elements */
 }
-
 
 .hero-section {
-    color:black;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust based on the desired height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 150px 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    color: white;
+}
+.container {
+    position: absolute;
+    z-index: 2; /* Ensure this is higher than the overlay's z-index */
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    background-color: #f9f9f9; /* Background color of the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the container */
+    margin-right: 60%;
+    margin-bottom: -10%;
 }
 
-.hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 0%;
-}
 
-.hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
+.text-content {
+    max-width: 500px; /* Adjust the maximum width of the text content */
+    margin-left: 20px; /* Adjust the space between the logo and text */
+    padding: 20px;
+    background: white; /* White background for the text container */
+    color: black; /* Black text color */
 }
-
-.btn {
-    display: inline-block;
-    background-color:navy;
-    color: bisque;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.bold-hr {
+    border: 0; /* Remove default border */
+    height: 3px; /* Adjust the height of the line */
+    background-color: black; /* Color of the line */
+}
+.section2 {
+    text-align: center; /* Center-align text */
+    background-color: #f9f9f9;
+    
     
 }
-.btn:hover{
-    background-color: black;
+
+.container2 {
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    background-color: #f9f9f9; /* Background color of the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the container */
+
 }
 
-.container {
-    max-width: 1000px;
+.container2 p {
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
+}
+.section3 {
+    width: 100%; /* Set section width to 100% */
+    text-align: center; /* Center-align text */
+    padding: 100px 0; /* Add padding to the section */
+    background-color: white;
+}
+
+.container3 {
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: white; /* Background color of the container */
+    max-height: 8000px;
+    height: 230px;
+    max-width: 8000px;
+    width: 1500px;
+    margin-bottom: -10%;
+}
+
+.container3 h2 {
+    font-weight: bold; /* Make the text bold */
+}
+
+.container3 p {
+    margin-top: 20px; /* Add space between paragraphs */
+    line-height: 2; /* Adjust the line height for better readability */
+}
+.contact-text, .email-text {
+    display: inline; /* Ensure both parts are inline */
+    margin-right: 45%;
+}
+.section4 {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container4 {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows wrapping if the screen size is smaller */
+
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .hero-section h1 {
-        font-size: 2.5em;
-    }
+.card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
 }
 
-@media (max-width: 992px) {
-    .hero-section h1 {
-        font-size: 2em;
-    }
-    .hero-section p {
-        font-size: 1em;
-    }
-    .logo2 {
-        max-width: 200px;
-        right: 50%;
-    }
+.card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222A59; /* Icon color */
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+
+footer {
+    background-color:#202755; /* Background color of the footer */
+    color: white; /* Text color in the footer */
+    padding: 20px 0; /* Padding for the footer */
+    text-align: center; /* Center-align text */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust the maximum width of the logo */
+}
+
+.footer-text {
+    text-align: center; /* Center-align the text */
+}
+
+.footer-text p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.footer-text a {
+    color: #F9D437; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#scrollUpBtn {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Position at the bottom */
+    right: 20px; /* Position at the right */
+    z-index: 99; /* Ensure it is above other content */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #333; /* Background color */
+    color:#F9D437; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Icon size */
+}
+
+#scrollUpBtn:hover {
+    background-color: #555; /* Darker background on hover */
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 100px 0;
+    .container4 {
+        flex-direction: column;
+        align-items: center;
     }
-    .hero-section h1 {
-        font-size: 1.8em;
-    }
-    .hero-section p {
-        font-size: 0.9em;
-    }
-    .logo2 {
-        max-width: 150px;
-        right: 30%;
-    }
-}
 
-@media (max-width: 576px) {
-    .hero-section {
-        padding: 80px 0;
-    }
-    .hero-section h1 {
-        font-size: 1.5em;
-    }
-    .hero-section p {
-        font-size: 0.8em;
-    }
-    .logo2 {
-        max-width: 120px;
-        right: 20%;
+    .card {
+        width: 80%;
     }
 }
