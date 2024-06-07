@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #fffcaefb;
     overflow: hidden;
     color: white;
 }
@@ -78,6 +78,8 @@ body {
     padding: 20px;
     background: white; /* White background for the text container */
     color: black; /* Black text color */
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 .bold-hr {
     border: 0; /* Remove default border */
@@ -86,7 +88,8 @@ body {
 }
 .section2 {
     text-align: center; /* Center-align text */
-    background-color: #f9f9f9;
+    background-color:#fffcaefb;
+    
     
     
 }
@@ -97,6 +100,8 @@ body {
     padding: 20px; /* Add padding to the container */
     background-color: #f9f9f9; /* Background color of the container */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the container */
+    padding-bottom: 50px;
+    
 
 }
 
@@ -128,16 +133,19 @@ body {
 
 .container3 p {
     margin-top: 20px; /* Add space between paragraphs */
-    line-height: 2; /* Adjust the line height for better readability */
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 .contact-text, .email-text {
     display: inline; /* Ensure both parts are inline */
     margin-right: 45%;
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 .section4 {
     width: 100%;
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: hsl(0, 0%, 92%);
     text-align: center;
 }
 
@@ -178,33 +186,41 @@ body {
     margin: 10px 0;
     font-size: 1em;
     color: #666;
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 
 
 footer {
-    background-color:#202755; /* Background color of the footer */
-    color: white; /* Text color in the footer */
-    padding: 20px 0; /* Padding for the footer */
     text-align: center; /* Center-align text */
+    
 }
-
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Align items horizontally */
     align-items: center;
     justify-content: center;
+    padding: 20px 0; /* Add padding to the footer container */
+    background-color: white; /* Background color of the footer */
+    /*background-color:#202755 ;*/
+    color: black; /* Text color in the footer */
 }
 
 .footer-logo {
     max-width: 100px; /* Adjust the maximum width of the logo */
+    margin-right: 20px; /* Space between the logo and the text */
 }
 
 .footer-text {
-    text-align: center; /* Center-align the text */
+    text-align: left; /* Left-align the text */
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 
 .footer-text p {
     margin: 5px 0; /* Space between paragraphs */
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
 }
 
 .footer-text a {
@@ -215,6 +231,7 @@ footer {
 .footer-text a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
 
 #scrollUpBtn {
     position: fixed; /* Fixed position */
