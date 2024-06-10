@@ -54,7 +54,7 @@ body {
     z-index: 2; /* Ensure this is higher than the overlay */
     color: rgb(255, 246, 201); /* Set text color */
     font-weight: bolder;
-    right: 65%;
+    right: 63%;
     top: 7%;
 }
 .hero-section {
