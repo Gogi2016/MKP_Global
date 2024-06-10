@@ -46,7 +46,17 @@ body {
     height: auto; /* Maintain aspect ratio */
     z-index: 3; /* Ensure this is higher than other elements */
 }
-
+.logo-caption {
+    position: absolute;
+    top: calc(20px + 150px); /* Adjust the distance from the top */
+    transform: translateX(-50%);
+    font-size: 28px; /* Adjust the font size */
+    z-index: 2; /* Ensure this is higher than the overlay */
+    color: rgb(245, 232, 166); /* Set text color */
+    font-weight: bolder;
+    right: 65%;
+    top: 7%;
+}
 .hero-section {
     position: relative;
     width: 100%;
@@ -59,6 +69,7 @@ body {
     overflow: hidden;
     color: white;
 }
+
 .container {
     position: absolute;
     z-index: 2; /* Ensure this is higher than the overlay's z-index */
@@ -88,9 +99,7 @@ body {
 }
 .section2 {
     text-align: center; /* Center-align text */
-    background-color:#fffcaefb;
-    
-    
+    background-color:#fffcaefb;  
     
 }
 
