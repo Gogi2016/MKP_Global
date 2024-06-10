@@ -52,7 +52,7 @@ body {
     transform: translateX(-50%);
     font-size: 28px; /* Adjust the font size */
     z-index: 2; /* Ensure this is higher than the overlay */
-    color: rgb(245, 232, 166); /* Set text color */
+    color: rgb(255, 246, 201); /* Set text color */
     font-weight: bolder;
     right: 65%;
     top: 7%;
