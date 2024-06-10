@@ -120,28 +120,28 @@ body {
     max-width: 800px; /* Adjust the maximum width of the container */
     margin: 0 auto; /* Center the container horizontally */
     background-color: white; /* Background color of the container */
-    max-height: 8000px;
-    height: 230px;
-    max-width: 8000px;
-    width: 1500px;
-    margin-bottom: -10%;
+    padding: 20px; /* Add padding inside the container */
+    text-align: left; /* Align text to the left */
 }
 
 .container3 h2 {
     font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center-align the heading */
 }
 
-.container3 p {
+.contact-text {
+    font-size: 18px; /* Adjust the font size of the text */
+    line-height: 1.5; /* Adjust the line height for better readability */
     margin-top: 20px; /* Add space between paragraphs */
+}
+
+.email-text {
     font-size: 18px; /* Adjust the font size of the text */
     line-height: 1.5; /* Adjust the line height for better readability */
+    text-align: center; /* Center-align the email text */
+    margin-top: 20px; /* Add space above the email text */
 }
-.contact-text, .email-text {
-    display: inline; /* Ensure both parts are inline */
-    margin-right: 45%;
-    font-size: 18px; /* Adjust the font size of the text */
-    line-height: 1.5; /* Adjust the line height for better readability */
-}
+
 .section4 {
     width: 100%;
     padding: 50px 0;
