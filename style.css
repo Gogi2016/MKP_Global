@@ -40,11 +40,11 @@ body {
 
 .logo2 {
     position: absolute;
-    top: -130px; /* Adjust the distance from the top */
+    top: -10%; /* Adjust the distance from the top */
     left: 20px; /* Adjust the distance from the right */
     width: 500px; /* Adjust the width of the logo */
     height: auto; /* Maintain aspect ratio */
-    z-index: 3; /* Ensure this is higher than other elements */
+    z-index: 4; /* Ensure this is higher than other elements */
 }
 .logo-caption {
     position: absolute;
@@ -54,8 +54,8 @@ body {
     z-index: 2; /* Ensure this is higher than the overlay */
     color: #F7D051; /* Set text color */
     font-weight: bolder;
-    right: 50%;
-    top: 18%;
+    right: 49.5%;
+    top: 25%;
 }
 .hero-section {
     position: relative;
@@ -71,21 +71,21 @@ body {
 }
 
 .container {
-    position: absolute;
-    z-index: 2; /* Ensure this is higher than the overlay's z-index */
-    max-width: 800px; /* Adjust the maximum width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding to the container */
-    background-color: #f9f9f9; /* Background color of the container */
+    z-index: 3; /* Ensure this is higher than the overlay's z-index */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the container */
-    margin-right: 60%;
-    margin-bottom: -10%;
-    
+    margin-right: 22%;
+    margin-top: 20%;
+    max-width: 1200px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;  
+
 }
 
 
 .text-content {
-    max-width: 500px; /* Adjust the maximum width of the text content */
+    max-width: 1200px; /* Adjust the maximum width of the text content */
     margin-left: 20px; /* Adjust the space between the logo and text */
     padding: 20px;
     background: white; /* White background for the text container */
@@ -98,41 +98,34 @@ body {
     height: 3px; /* Adjust the height of the line */
     background-color:#F7D051; /* Color of the line */
 }
-.section2 {
-    text-align: center; /* Center-align text */
-    background-color:white;  
-    
+.section2, .section3, .section4 {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
 }
 
-.container2 {
-    max-width: 800px; /* Adjust the maximum width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding to the container */
-    background-color: #f9f9f9; /* Background color of the container */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the container */
-    padding-bottom: 50px;
-    
-
+.container2, .container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
+.container4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows wrapping if the screen size is smaller */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 .container2 p {
     font-size: 18px; /* Adjust the font size of the text */
     line-height: 1.5; /* Adjust the line height for better readability */
 }
-.section3 {
-    width: 100%; /* Set section width to 100% */
-    text-align: center; /* Center-align text */
-    padding: 100px 0; /* Add padding to the section */
-    background-color: white;
-}
 
-.container3 {
-    max-width: 800px; /* Adjust the maximum width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-    background-color: white; /* Background color of the container */
-    padding: 20px; /* Add padding inside the container */
-    text-align: left; /* Align text to the left */
-}
 
 .container3 h2 {
     font-weight: bold; /* Make the text bold */
@@ -152,22 +145,6 @@ body {
     margin-top: 20px; /* Add space above the email text */
 }
 
-.section4 {
-    width: 100%;
-    padding: 50px 0;
-    background-color: hsl(0, 0%, 92%);
-    text-align: center;
-}
-
-.container4 {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; /* Allows wrapping if the screen size is smaller */
-
-}
 
 .card {
     background-color: white;
@@ -262,61 +239,107 @@ footer {
     background-color: #555; /* Darker background on hover */
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+
+    .container2, .container3, .container4 {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin-right: 5%;
+        margin-bottom: 15%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
     .logo2 {
-        top: -80px;
-        max-width: 300px;
+        width: 300px;
+        top: -100px;
     }
 
     .logo-caption {
-        font-size: 6vw;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo2 {
+        width: 250px;
+        top: -80px;
+    }
+
+    .logo-caption {
+        font-size: 25px;
     }
 
     .text-content {
-        font-size: 4vw;
-    }
-
-    .hero-section {
-        height: auto;
+        font-size: 16px;
     }
 
     .container {
         margin-right: 0;
-        max-width: 100%;
+        margin-bottom: 20%;
     }
 
-    .container2, .container3, .container4 {
-        padding: 10px;
+    .hero-section {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo2 {
+        width: 200px;
+        top: -50px;
     }
 
-    .card {
-        max-width: 100%;
+    .logo-caption {
+        font-size: 20px;
+        top: 15%;
+    }
+
+    .text-content {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30%;
     }
 
     .footer-container {
+        flex-direction: column;
         text-align: center;
     }
 
     .footer-logo {
-        margin: 0 auto 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-caption {
-        font-size: 8vw;
+        margin: 0 0 10px 0;
     }
 
-    .text-content {
-        font-size: 5vw;
+    .footer-text {
+        text-align: center;
     }
 
-    .container {
+    .email-text {
+        font-size: 16px;
+    }
+
+    #scrollUpBtn {
         padding: 10px;
-    }
-
-    .footer-text p {
-        font-size: 0.9rem;
+        font-size: 16px;
     }
 }
