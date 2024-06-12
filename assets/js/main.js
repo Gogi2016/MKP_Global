@@ -54,7 +54,7 @@ function carousel() {
         slideIndex = 0; // Reset index when it exceeds the number of slides
     }
     slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Adjust based on the number of images
-    setTimeout(carousel, 1000); // Change image every 2 seconds
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 //scroll up btn
