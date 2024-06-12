@@ -74,15 +74,15 @@ h6,
 }
 
 .logo-caption {
-  position: relative;
+  position: absolute;
   top: calc(20px + 1500px);
   transform: translateX(-50%);
   font-size: 40px;
   z-index: 2;
   color: white;
   font-weight: bolder;
-  right: 14%;
-  top: -18%;
+  right: 47%;
+  top: 28%;
 }
 
 .container1 {
