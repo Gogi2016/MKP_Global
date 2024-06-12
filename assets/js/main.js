@@ -1,10 +1,4 @@
-/**
-* Template Name: Siimple
-* Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -35,29 +29,6 @@
     }
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  const toogleNav = function() {
-    let navButton = select('.nav-toggle')
-    navButton.classList.toggle('nav-toggle-active')
-    navButton.querySelector('i').classList.toggle('bx-x')
-    navButton.querySelector('i').classList.toggle('bx-menu')
-
-    select('.nav-menu').classList.toggle('nav-menu-active')
-  }
-  on('click', '.nav-toggle', function(e) {
-    toogleNav();
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.nav-menu .drop-down > a', function(e) {
-    e.preventDefault()
-    this.nextElementSibling.classList.toggle('drop-down-active')
-    this.parentElement.classList.toggle('active')
-  }, true)
 
   /**
    * Scrool links with a class name .scrollto
@@ -83,5 +54,39 @@ function carousel() {
         slideIndex = 0; // Reset index when it exceeds the number of slides
     }
     slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Adjust based on the number of images
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 1000); // Change image every 2 seconds
 }
+
+//scroll up btn
+document.querySelector('.scroll-up-btn').addEventListener('click', () => {
+	window.scrollTo({
+	  top: 0,
+	  behavior: 'smooth'
+	});
+  });
+
+  //php
+
+  $(document).ready(function () {
+    $('.php-email-form').submit(function (e) {
+        e.preventDefault();
+        var form = $(this);
+        var formData = form.serialize();
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: formData,
+            success: function (response) {
+                if (response == 'success') {
+                    $(".sent-message").css("display", "block");
+                    $(".error-message").css("display", "none");
+                    form.trigger("reset");
+                } else {
+                    $(".error-message").css("display", "block");
+                    $(".sent-message").css("display", "none");
+                }
+            }
+        });
+    });
+});
+
