@@ -1,7 +1,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color:black;
 }
 
 h1,
@@ -16,7 +16,7 @@ h6,
 .bold-hr {
   border: 0;
   height: 3px;
-  background-color:#F7D051;
+  background-color:#ffc400;
 }
 .hero-section {
   position: relative;
@@ -107,6 +107,89 @@ h6,
   font-size: 19px;
   line-height: 1.5;
 }
+
+@media (max-width: 1200px) {
+  .logo2 {
+    width: 400px;
+  }
+  
+  .logo-caption {
+    font-size: 30px;
+  }
+  
+  .container1 {
+    width: 70%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo2 {
+    width: 300px;
+  }
+  
+  .logo-caption {
+    font-size: 25px;
+  }
+  
+  .container1 {
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 15%;
+  }
+  
+  .text-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo2 {
+    width: 250px;
+  }
+  
+  .logo-caption {
+    font-size: 20px;
+  }
+  
+  .container1 {
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
+  
+  .text-content {
+    font-size: 17px;
+  }
+  
+  .hero-section h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo2 {
+    width: 200px;
+  }
+  
+  .logo-caption {
+    font-size: 18px;
+  }
+  
+  .container1 {
+    width: 95%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+  }
+  
+  .text-content {
+    font-size: 16px;
+  }
+  
+  .hero-section h1 {
+    font-size: 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -152,7 +235,7 @@ h6,
 #hero .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #F7D051;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -161,7 +244,7 @@ h6,
 #hero .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #F7D051;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -182,7 +265,7 @@ h6,
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: #F7D051;
   border-top-color: #eee;
   animation: animate-loading-notify 1s linear infinite;
 }
@@ -220,11 +303,11 @@ h6,
   margin: 10px;
   border: none;
   color: #fff;
-  background: #fd680e;
+  background:#F7D051;
 }
 
 #hero .php-email-form button[type=submit]:hover {
-  background: #fd8841;
+  background: #F7D051;
 }
 
 @media (min-width: 1024px) {
@@ -280,7 +363,7 @@ section {
   display: block;
   width: 80px;
   height: 1px;
-  background: #fd680e;
+  background:#F7D051;
   bottom: 0;
   left: calc(50% - 40px);
 }
@@ -311,7 +394,7 @@ section {
 .about ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #fd680e;
+  color: #F7D051;
 }
 
 .about p:last-child {
@@ -319,7 +402,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# History, Mission and Values
 --------------------------------------------------------------*/
 .why-us {
   padding-bottom: 30px;
@@ -344,7 +427,7 @@ section {
   height: 64px;
   padding-top: 10px;
   text-align: center;
-  background-color: #fd680e;
+  background-color:#F7D051;
   border-radius: 50%;
   text-align: center;
   border: 4px solid #fff;
@@ -362,11 +445,11 @@ section {
 }
 
 .why-us .card-title a {
-  color: #743e1d;
+  color:#222A59;
 }
 
 .why-us .card-title a:hover {
-  color: #fd680e;
+  color: #222A59;
 }
 
 .why-us .card-text {
@@ -374,75 +457,14 @@ section {
 }
 
 .why-us .card:hover .card-icon i {
-  background: #fff;
-  color: #fd680e;
+  background: #222A59;
+  color: #F7D051;
 }
 
 @media (max-width: 1024px) {
   .why-us {
     background-attachment: scroll;
   }
-}
-
-/*--------------------------------------------------------------
-# Frequenty Asked Questions
---------------------------------------------------------------*/
-.faq {
-  padding-bottom: 60px;
-}
-
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: #fd680e;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-right: 25px;
-  cursor: pointer;
-}
-
-.faq .faq-list i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #fd680e;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -454,7 +476,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #fd680e;
+  color: #F9D437;
   float: left;
 }
 
@@ -472,7 +494,7 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5a2c10;
+  background:#222A59;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -484,14 +506,14 @@ section {
 }
 
 .contact .social-links a:hover {
-  background: #fd680e;
+  background:#F9D437;
   color: #fff;
 }
 
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #222A59;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -504,7 +526,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #222A59;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -524,7 +546,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: #F7D051;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -538,11 +560,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #fd680e;
+  border-color: #F9D437;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #fd680e;
+  background:#222A59;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -550,7 +572,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fd8841;
+  background: #F9D437;
 }
 
 @media (max-width: 768px) {
