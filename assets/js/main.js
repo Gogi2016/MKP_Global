@@ -45,17 +45,30 @@
 
 // carousel.js
 let slideIndex = 0;
-carousel();
+const slides = document.querySelector(".carousel-slide");
+const container1 = document.querySelector(".container1");
 
 function carousel() {
-    const slides = document.querySelector(".carousel-slide");
     slideIndex++;
-    if (slideIndex > 2) { 
+    if (slideIndex > 2) { // Adjust index for the number of images
         slideIndex = 0; // Reset index when it exceeds the number of slides
     }
     slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Adjust based on the number of images
+    updateContainerPosition();
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+function updateContainerPosition() {
+    if (slideIndex === 0) {
+        container1.style.opacity = "1"; // Show container on the first slide
+    } else {
+        container1.style.opacity = "0"; // Hide container on other slides
+    }
+}
+
+carousel();
+
+
 
 //scroll up btn
 document.querySelector('.scroll-up-btn').addEventListener('click', () => {
