@@ -56,7 +56,7 @@ function carousel() {
     }
     slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Adjust based on the number of images
     updateTextContentVisibility();
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 
 function updateTextContentVisibility() {
@@ -72,8 +72,9 @@ function updateTextContentVisibility() {
     }
 }
 
-carousel();
-
+// Start the carousel with an initial delay
+updateTextContentVisibility(); // Ensure correct text visibility on first load
+setTimeout(carousel, 3000); // Start the first timeout
 
 
 //scroll up btn
