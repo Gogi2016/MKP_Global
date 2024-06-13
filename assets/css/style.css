@@ -90,7 +90,7 @@ h6,
 
 .logo2 {
   position: absolute;
-  top: -10%;
+  top: 6%;
   left: 20px;
   width: 500px;
   height: auto;
@@ -486,9 +486,28 @@ section {
   color: #F7D051;
 }
 
+.moving-card .card-body {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (max-width: 1024px) {
   .why-us {
     background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .moving-card .card-body {
+    animation: moveUpDown 5s ease-in-out infinite;
   }
 }
 
