@@ -43,10 +43,11 @@
 
 })()
 
-// carousel.js
+//carousel
 let slideIndex = 0;
 const slides = document.querySelector(".carousel-slide");
-const container1 = document.querySelector(".container1");
+const container1 = document.querySelector(".text-content");
+const container2 = document.querySelector(".text-content2");
 
 function carousel() {
     slideIndex++;
@@ -54,15 +55,20 @@ function carousel() {
         slideIndex = 0; // Reset index when it exceeds the number of slides
     }
     slides.style.transform = `translateX(-${slideIndex * 33.33}%)`; // Adjust based on the number of images
-    updateContainerPosition();
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    updateTextContentVisibility();
+    setTimeout(carousel, 3000); // Change image every 2 seconds
 }
 
-function updateContainerPosition() {
+function updateTextContentVisibility() {
     if (slideIndex === 0) {
-        container1.style.opacity = "1"; // Show container on the first slide
+        container1.style.display = "block"; // Show text content 1 on the first slide
+        container2.style.display = "none"; // Hide text content 2 on the first slide
+    } else if (slideIndex === 2) {
+        container1.style.display = "none"; // Hide text content 1 on the second slide
+        container2.style.display = "block"; // Show text content 2 on the second slide
     } else {
-        container1.style.opacity = "0"; // Hide container on other slides
+        container1.style.display = "none"; // Hide text content 1 on other slides
+        container2.style.display = "none"; // Hide text content 2 on other slides
     }
 }
 

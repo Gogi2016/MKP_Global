@@ -15,8 +15,8 @@ h6,
 }
 .bold-hr {
   border: 0;
-  height: 3px;
-  background-color:#ffc400;
+  height: 5px;
+  background-color: #ffc400;
 }
 .hero-section {
   position: relative;
@@ -47,20 +47,43 @@ h6,
   transition: transform 0.5s ease;
 }
 
-.carousel-slide img {
+.slide {
+  position: relative;
   width: 33.33%; /* Adjust based on the number of images */
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%; /* Adjust based on the number of images */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure the image covers the entire area */
 }
 
+.text-content, .text-content2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  width: 50%;
+}
 
-
-@keyframes slide {
-  0% {
-      transform: translateX(0);
+@media (max-width: 600px) {
+  .text-content, .text-content2 {
+    padding: 10px;
+    width: 90%;
   }
-  100% {
-      transform: translateX(-100%);
+  
+  .text-content h1, .text-content2 h1 {
+    font-size: 20px;
+  }
+  
+  .text-content p, .text-content2 p {
+    font-size: 14px;
   }
 }
 
@@ -74,15 +97,26 @@ h6,
 }
 
 .logo-caption {
-  position: absolute;
+  position: relative;
   top: calc(20px + 1500px);
   transform: translateX(-50%);
   font-size: 40px;
   z-index: 2;
   color: white;
   font-weight: bolder;
-  right: 47%;
-  top: 28%;
+  right: 14%;
+  top: -18%;
+}
+
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 .container1 {
@@ -96,16 +130,6 @@ h6,
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 60%;  
   position: absolute;
-}
-
-.text-content {
-  max-width: 1200px;
-  margin-left: 20px;
-  padding: 20px;
-  background: white;
-  color: black;
-  font-size: 19px;
-  line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
@@ -153,7 +177,7 @@ h6,
   }
   
   .container1 {
-    width: 90%;
+    width: 50%;
     margin-right: 5%;
     margin-top: 10%;
   }
