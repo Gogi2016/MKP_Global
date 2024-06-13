@@ -42,22 +42,23 @@ h6,
 
 .carousel-slide {
   display: flex;
-  width: 300%;
+  width: 400%; /* Adjust based on the number of images */
   height: 100%;
   transition: transform 0.5s ease;
 }
 
 .slide {
   position: relative;
-  width: 33.33%; /* Adjust based on the number of images */
+  width: 25%; /* Adjust based on the number of images */
   height: 100%;
 }
 
 .carousel-slide img {
-  width: 100%; /* Adjust based on the number of images */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100%;
   object-fit: cover; /* Ensure the image covers the entire area */
 }
+
 
 .text-content, .text-content2 {
   position: absolute;
