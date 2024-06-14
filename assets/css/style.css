@@ -97,20 +97,6 @@ h6,
   z-index: 4;
 }
 
-.logo-caption {
-  position: relative;
-  top: calc(20px + 1500px);
-  transform: translateX(-50%);
-  font-size: 40px;
-  z-index: 2;
-  color: white;
-  font-weight: bolder;
-  right: 14%;
-  top: -18%;
-}
-
-
-
 @keyframes slide {
   0% {
       transform: translateX(0);
@@ -131,6 +117,18 @@ h6,
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 60%;  
   position: absolute;
+}
+
+.logo-caption {
+  position: absolute;
+  top: 20px; /* Adjust this value as needed */
+  transform: translateX(-50%);
+  font-size: 40px;
+  z-index: 2;
+  color: white;
+  font-weight: bolder;
+  right: 47%;
+  top: 27%;
 }
 
 @media (max-width: 1200px) {
@@ -196,11 +194,12 @@ h6,
   .logo2 {
     width: 200px;
   }
-  
   .logo-caption {
     font-size: 18px;
+    right: -20px;
+    top:17%; /* Remove the top property to avoid conflicts */
   }
-  
+
   .container1 {
     width: 95%;
     margin-right: 2.5%;
@@ -215,6 +214,8 @@ h6,
     font-size: 20px;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
