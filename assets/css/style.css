@@ -123,12 +123,13 @@ h6,
   position: absolute;
   top: 20px; /* Adjust this value as needed */
   transform: translateX(-50%);
-  font-size: 40px;
+  font-size: 57px;
   z-index: 2;
   color: white;
   font-weight: bolder;
-  right: 47%;
+  right: 48%;
   top: 27%;
+  font-family: Agency FB;
 }
 
 @media (max-width: 1200px) {
@@ -196,7 +197,7 @@ h6,
   }
   .logo-caption {
     font-size: 18px;
-    right: 50px;
+    right: 160px;
     top:17%; /* Remove the top property to avoid conflicts */
   }
 
