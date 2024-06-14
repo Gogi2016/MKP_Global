@@ -120,16 +120,15 @@ h6,
 }
 
 .logo-caption {
-  position: absolute;
-  top: 20px; /* Adjust this value as needed */
+  position: relative;
+  top: -18%;
   transform: translateX(-50%);
   font-size: 57px;
   z-index: 2;
   color: white;
   font-weight: bolder;
-  right: 48%;
-  top: 27%;
-  font-family: Agency FB;
+  right: 15%;
+  font-family: 'Agency FB', sans-serif; /* Ensure fallback font is defined */
 }
 
 @media (max-width: 1200px) {
@@ -174,6 +173,9 @@ h6,
   
   .logo-caption {
     font-size: 20px;
+    top: -32%; /* Adjust the top position */
+    right: 50%;
+    transform: translateX(60%);
   }
   
   .container1 {
@@ -195,10 +197,12 @@ h6,
   .logo2 {
     width: 200px;
   }
+
   .logo-caption {
-    font-size: 18px;
-    right: 160px;
-    top:17%; /* Remove the top property to avoid conflicts */
+    font-size: 23px;
+    top: -32%; /* Adjust the top position */
+    right: 50%;
+    transform: translateX(60%);
   }
 
   .container1 {
