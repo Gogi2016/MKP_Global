@@ -196,7 +196,7 @@ h6,
   }
   .logo-caption {
     font-size: 18px;
-    right: -20px;
+    right: 50px;
     top:17%; /* Remove the top property to avoid conflicts */
   }
 
