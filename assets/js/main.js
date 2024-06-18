@@ -84,28 +84,4 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
 	});
   });
 
-  //php
-
-  $(document).ready(function () {
-    $('.php-email-form').submit(function (e) {
-        e.preventDefault();
-        var form = $(this);
-        var formData = form.serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: formData,
-            success: function (response) {
-                if (response == 'success') {
-                    $(".sent-message").css("display", "block");
-                    $(".error-message").css("display", "none");
-                    form.trigger("reset");
-                } else {
-                    $(".error-message").css("display", "block");
-                    $(".sent-message").css("display", "none");
-                }
-            }
-        });
-    });
-});
 
