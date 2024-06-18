@@ -111,7 +111,7 @@ h6,
     font-size: 57px;
     color: white;
     font-weight: bolder;
-    font-family: 'Agency FB', sans-serif; /* Ensure fallback font is defined */
+    font-family: Agency FB;
     margin-top: 10px; /* Adjust this value as needed */
     text-align: center;
 }
@@ -640,7 +640,7 @@ section {
 
 .footer-paragraph {
   margin-top: 10px; /* Add some margin to separate the text from the logo */
-  font-family: 'Agency FB', sans-serif;
+  font-family: Agency FB;
   font-size: 17px;
 }
 
