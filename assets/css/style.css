@@ -89,65 +89,82 @@ h6,
 }
 
 .logo-container {
-  position: absolute;
-  top: 6%;
-  left: 20px;
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: absolute;
+    top: 6%;
+    left: 20px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo2 {
-  width: 500px;
-  height: auto;
+    width: 500px;
+    height: auto;
 }
 
 .logo-caption {
-  font-size: calc(16px + 2vw); /* Dynamic font size based on viewport width */
-  color: white;
-  font-weight: bolder;
-  font-family: 'Agency FB', sans-serif; /* Ensure fallback font is defined */
-  margin-top: 10px; /* Adjust this value as needed */
-  text-align: center;
+    font-size: 57px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Agency FB', sans-serif; /* Ensure fallback font is defined */
+    margin-top: 10px; /* Adjust this value as needed */
+    text-align: center;
 }
 
 @media (max-width: 1200px) {
-  .logo2 {
-      width: 400px;
-  }
+    .logo2 {
+        width: 400px;
+    }
+  
+    .logo-caption {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 992px) {
-  .logo2 {
-      width: 300px;
-  }
+    .logo2 {
+        width: 300px;
+    }
+  
+    .logo-caption {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 768px) {
-  .logo2 {
-      width: 250px;
-  }
+    .logo2 {
+        width: 250px;
+    }
+  
+    .logo-caption {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
-  .logo2 {
-      width: 200px;
-  }
+    .logo2 {
+        width: 200px;
+    }
+
+    .logo-caption {
+        font-size: 23px;
+    }
 }
 
 .container1 {
-  z-index: 3;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-right: 22%;
-  margin-top: 20%;
-  max-width: 1200px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 60%;  
-  position: absolute;
+    z-index: 3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 22%;
+    margin-top: 20%;
+    max-width: 1200px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;  
+    position: absolute;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -591,13 +608,13 @@ section {
 }
 
 .footer-logo {
-  max-width: 150px;
+  max-width: 180px;
 }
 
 .footer-paragraph {
   margin-top: 10px; /* Add some margin to separate the text from the logo */
   font-family: 'Agency FB', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .footer-text {
