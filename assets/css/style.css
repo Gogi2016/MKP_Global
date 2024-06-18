@@ -40,18 +40,21 @@ h6,
   z-index: 1;
 }
 
-.carousel-slide {
-  display: flex;
-  width: 400%; /* Adjust based on the number of images */
-  height: 100%;
-  transition: transform 0.5s ease;
-}
-
 .slide {
   position: relative;
-  width: 25%; /* Adjust based on the number of images */
+  width: 0; /* Initially hidden width */
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease, width 0.5s ease; /* Default transition duration */
 }
+
+.carousel-slide {
+  display: flex;
+  width: 100%; /* Adjust based on the number of images */
+  height: 100%;
+  transition: transform 1s ease; /* Adjust the transition duration for transform */
+}
+
 
 .carousel-slide img {
   width: 100%;
@@ -59,19 +62,20 @@ h6,
   object-fit: cover; /* Ensure the image covers the entire area */
 }
 
-
 .text-content, .text-content2 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: none; /* Initially hidden */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Transition for opacity */
   width: 50%;
 }
+
 
 @media (max-width: 600px) {
   .text-content, .text-content2 {
@@ -165,19 +169,36 @@ h6,
     position: absolute;
 }
 
+.carousel-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+#carousel-toggle {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #222A59;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#carousel-toggle:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1); /* Optional: Add a slight scaling effect on hover */
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 80vh;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: -80px;
-  z-index: 9;
-}
 
 #hero .hero-container {
   position: absolute;
