@@ -102,19 +102,20 @@ h6,
     align-items: center;
 }
 
-/* Common styles for both logo and footer */
-.logo2, .footer-logo {
-  max-width: 500px; /* Default width for larger screens */
-  height: auto;
+.logo2 {
+    width: 500px;
+    height: auto;
 }
 
-.logo-caption, .footer-paragraph {
-  font-size: 30px; /* Default font size */
-  font-family: 'Agency FB', sans-serif;
-  text-align: center;
+.logo-caption {
+    font-size: 57px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Agency FB', sans-serif; /* Ensure fallback font is defined */
+    margin-top: 10px; /* Adjust this value as needed */
+    text-align: center;
 }
 
-/* Media queries for responsive design */
 @media (max-width: 1200px) {
   .logo2, .footer-logo {
       max-width: 400px;
@@ -154,7 +155,6 @@ h6,
       font-size: 14px;
   }
 }
-
 
 .container1 {
     z-index: 3;
