@@ -1,3 +1,11 @@
+/* Define @font-face for Agency FB */
+@font-face {
+  font-family: 'Agency FB';
+  src: url('/assets/vendor/boxicons/fonts/AgencyFB-Bold.ttf') format('truetype'); /* Adjust the path as per your directory structure */
+  font-weight: bold; /* Specify font weight if applicable */
+  font-style: normal; /* Specify font style if applicable */
+}
+
 
 body {
   font-family: "Open Sans";
@@ -111,9 +119,10 @@ h6,
     font-size: 57px;
     color: white;
     font-weight: bolder;
-    font-family: 'Agency FB', 'Roboto', sans-serif; 
+    font-family: 'Agency FB'; 
     margin-top: 10px; /* Adjust this value as needed */
     text-align: center;
+    
 }
 
 @media (max-width: 1200px) {
@@ -645,7 +654,7 @@ section {
 
 .footer-paragraph {
   margin-top: 10px; /* Add some margin to separate the text from the logo */
-  font-family: 'Agency FB', 'Roboto', sans-serif; 
+  font-family: 'Agency FB'; 
   font-size: 17px;
 }
 
