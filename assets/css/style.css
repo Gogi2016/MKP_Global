@@ -697,3 +697,68 @@ section {
   cursor: pointer;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo-caption {
+    font-size: 23px;
+    /* Adjusted font size for logo caption */
+  }
+
+  .footer-paragraph {
+    font-size: 17px;
+    /* Adjusted font size for footer paragraph */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo-caption {
+    font-size: 28px;
+    /* Same font size as extra small, adjusting only if needed */
+  }
+
+  .footer-paragraph {
+    font-size: 17px;
+    /* Adjusted font size for footer paragraph */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo-caption {
+    font-size: 35px;
+    /* Same font size as smaller sizes, adjusting only if needed */
+  }
+
+  .footer-paragraph {
+    font-size: 18px;
+    /* Adjusted font size for footer paragraph */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .logo-caption {
+    font-size: 50px;
+    /* Same font size as smaller sizes, adjusting only if needed */
+  }
+
+  .footer-paragraph {
+    font-size: 17px;
+    /* Same font size as smaller sizes, adjusting only if needed */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .logo-caption {
+    font-size:57px;
+    /* Same font size as smaller sizes, adjusting only if needed */
+  }
+
+  .footer-paragraph {
+    font-size: 17px;
+    /* Same font size as smaller sizes, adjusting only if needed */
+  }
+}
