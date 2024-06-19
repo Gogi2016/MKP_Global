@@ -487,7 +487,7 @@ section {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 .gallery img {
   width: 30%; /* Adjust based on your layout preferences */
