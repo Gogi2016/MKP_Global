@@ -132,3 +132,6 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
 	  behavior: 'smooth'
 	});
   });
+
+  // Gallery
+  
