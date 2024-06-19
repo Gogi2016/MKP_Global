@@ -1,9 +1,10 @@
-/* Define @font-face for Agency FB */
 @font-face {
   font-family: 'Agency FB';
-  src: url('/assets/vendor/boxicons/fonts/AgencyFB-Bold.ttf') format('truetype'); /* Adjust the path as per your directory structure */
-  font-weight: bold; /* Specify font weight if applicable */
-  font-style: normal; /* Specify font style if applicable */
+  src: url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.ttf') format('truetype'),
+       url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.woff') format('woff'),
+       url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 
