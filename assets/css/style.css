@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   color:black;
 }
 
@@ -11,7 +11,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
 }
 .bold-hr {
   border: 0;
@@ -111,7 +111,7 @@ h6,
     font-size: 57px;
     color: white;
     font-weight: bolder;
-    font-family: Agency FB;
+    font-family:fantasy;
     margin-top: 10px; /* Adjust this value as needed */
     text-align: center;
 }
