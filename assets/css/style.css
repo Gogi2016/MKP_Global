@@ -21,8 +21,8 @@
 @font-face{
   font-family: "Agency FB";
   src: url("/f9b9a4fce362a3a9111c138859ccb422.eot");
-  src: url("//f9b9a4fce362a3a9111c138859ccb422.eot?#iefix")format("embedded-opentype"),
-      url("f9b9a4fce362a3a9111c138859ccb422.woff")format("woff"),
+  src: url("/f9b9a4fce362a3a9111c138859ccb422.eot?#iefix")format("embedded-opentype"),
+      url("/f9b9a4fce362a3a9111c138859ccb422.woff")format("woff"),
       url("/f9b9a4fce362a3a9111c138859ccb422.woff2")format("woff2"),
       url("/f9b9a4fce362a3a9111c138859ccb422.ttf")format("truetype"),
       url("/f9b9a4fce362a3a9111c138859ccb422.svg#Agency FB V2")format("svg");
