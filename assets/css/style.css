@@ -742,12 +742,12 @@ section {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo-caption {
-    font-size: 25px;
+    font-size: 5px;
     /* Same font size as smaller sizes, adjusting only if needed */
   }
 
   .footer-paragraph {
-    font-size: 12px;
+    font-size: 2px;
     /* Adjusted font size for footer paragraph */
   }
 }
