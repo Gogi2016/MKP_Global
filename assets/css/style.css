@@ -1,35 +1,5 @@
 
-@font-face {
-  font-family: 'Agency FB';
-  src: url('/agency_fb_bold-webfont.woff') format('woff2'),
-       url('/agency_fb_bold-webfont.woff') format('woff'),
-       url('/agencyfb-bold-webfont.woff2') format('woff2'),
-       url('/agencyfb-bold-webfont.woff') format('woff'),
-       url('/agencyb-webfont.woff2') format('woff2'),
-       url('/agencyb-webfont.woff') format('woff'),
-       url('/assets/vendor/boxicons/fonts/AgencyFB-Bold.ttf') format('truetype'),
-       url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.woff') format('woff'),
-       url('/assets/vendor/boxicons/fonts/AGENCYB.woff') format('woff'),
-       url('/assets/vendor/boxicons/fonts/AGENCYB.TTF') format('tff'),
-       url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.woff2'), format('woff2')
-       url('/assets/vendor/boxicons/fonts/Agency\ FB\ Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face{
-  font-family: "Agency FB";
-  src: url("/f9b9a4fce362a3a9111c138859ccb422.eot");
-  src: url("/f9b9a4fce362a3a9111c138859ccb422.eot?#iefix")format("embedded-opentype"),
-      url("/f9b9a4fce362a3a9111c138859ccb422.woff")format("woff"),
-      url("/f9b9a4fce362a3a9111c138859ccb422.woff2")format("woff2"),
-      url("/f9b9a4fce362a3a9111c138859ccb422.ttf")format("truetype"),
-      url("/f9b9a4fce362a3a9111c138859ccb422.svg#Agency FB V2")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
-}
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
 
 body {
   font-family: "Open Sans";
