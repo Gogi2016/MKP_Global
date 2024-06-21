@@ -1,6 +1,4 @@
 
-@import url('https://fonts.cdnfonts.com/css/agency-fb');
-
 body {
   font-family: "Open Sans";
   color:black;
@@ -112,7 +110,7 @@ h6,
 .logo-caption {
     font-size: 57px;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
     font-family: 'Agency FB'; 
     margin-top: 10px; /* Adjust this value as needed */
     position: relative;
