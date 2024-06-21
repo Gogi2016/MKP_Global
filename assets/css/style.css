@@ -83,7 +83,7 @@ h6,
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Transition for opacity */
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -193,141 +193,6 @@ h6,
   transform: scale(1.1); /* Optional: Add a slight scaling effect on hover */
 }
 
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-
-#hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56px;
-  line-height: 56px;
-  color: #222;
-}
-
-#hero h2 {
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-#hero .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #F7D051;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#hero .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #F7D051;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#hero .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 15px;
-  border-radius: 50px;
-}
-
-#hero .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: #F7D051;
-  border-top-color: #eee;
-  animation: animate-loading-notify 1s linear infinite;
-}
-
-@keyframes animate-loading-notify {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-#hero .php-email-form input {
-  border-radius: 50px;
-  box-shadow: none;
-  font-size: 14px;
-  border: 0;
-  padding: 0px 15px 2px 20px;
-  width: 250px;
-  height: 40px;
-  margin: 0 8px;
-}
-
-#hero .php-email-form button[type=submit] {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: none;
-  color: #fff;
-  background:#F7D051;
-}
-
-#hero .php-email-form button[type=submit]:hover {
-  background: #F7D051;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-
-  #hero .php-email-form input {
-    margin: 0 auto;
-  }
-}
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -375,21 +240,6 @@ section {
 .about h3 {
   font-weight: 300;
   font-size: 26px;
-}
-
-.about ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about ul li {
-  padding-bottom: 10px;
-}
-
-.about ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #F7D051;
 }
 
 .about p:last-child {
@@ -701,6 +551,7 @@ section {
   text-decoration: underline;
 }
 
+/*Scroll up btn*/
 .scroll-up-btn {
   position: fixed;
   bottom: 20px;
@@ -715,6 +566,7 @@ section {
   cursor: pointer;
 }
 
+/*Responsiveness of logo caption & foter paragraph*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
