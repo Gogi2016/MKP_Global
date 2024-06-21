@@ -493,7 +493,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   .gallery img {
-      width: 48%; /* Adjust for smaller screens */
+      width: 55%; /* Adjust for smaller screens */
   }
 }
 @media screen and (max-width: 576px) {
