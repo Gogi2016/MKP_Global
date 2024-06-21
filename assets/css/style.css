@@ -564,7 +564,7 @@ section {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
-  z-index: -6;
+  z-index: 8;
 }
 
 /*Responsiveness of logo caption & foter paragraph*/
