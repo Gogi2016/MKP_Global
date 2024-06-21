@@ -95,7 +95,7 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
         margin: 10,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 2000, // Time between slides in milliseconds
+        autoplayTimeout: 3000, // Time between slides in milliseconds
         responsive: {
             0: {
                 items: 1
