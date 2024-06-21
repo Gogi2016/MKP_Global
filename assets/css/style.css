@@ -481,24 +481,44 @@ section {
   }
 }
 
-/*Gallery*/
+/* Base styles for the gallery */
 .owl-carousel .item {
   position: relative;
-  margin: -70px; 
+  margin: -70px; /* Positive margin for spacing between items */
 }
 .owl-carousel .item img {
   width: 80%;
-  border-radius: 10px;
+  border-radius: 20px;
   display: inline-block;
 }
+
+/* Adjustments for tablets and smaller screens */
 @media screen and (max-width: 768px) {
+  .owl-carousel .item {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
   .owl-carousel .item img {
-      width: 60%; /* Adjust for smaller screens */
+    width: 70%; /* Adjust width for smaller screens */
   }
 }
+
+/* Adjustments for phones */
 @media screen and (max-width: 576px) {
+  .owl-carousel .item {
+    margin: 5px; /* Adjust margin for phones */
+  }
   .owl-carousel .item img {
-      width: 100%; /* Full width on smallest screens */
+    width: 90%; /* Almost full width on smallest screens */
+  }
+}
+
+/* Further adjustments for very small screens or landscape mode */
+@media screen and (max-width: 400px) {
+  .owl-carousel .item {
+    margin: 5px; /* Adjust margin for very small screens */
+  }
+  .owl-carousel .item img {
+    width: 100%; /* Full width on smallest screens */
   }
 }
 
