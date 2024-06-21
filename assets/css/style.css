@@ -493,7 +493,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   .owl-carousel .item img {
-      width: 50%; /* Adjust for smaller screens */
+      width: 60%; /* Adjust for smaller screens */
   }
 }
 @media screen and (max-width: 576px) {
