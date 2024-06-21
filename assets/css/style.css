@@ -484,16 +484,16 @@ section {
 /*Gallery*/
 .owl-carousel .item {
   position: relative;
-  padding: 10px; 
+  margin: -70px; 
 }
 .owl-carousel .item img {
   width: 80%;
-  border-radius: 5px;
+  border-radius: 10px;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel .item img {
-      width: 48%; /* Adjust for smaller screens */
+      width: 50%; /* Adjust for smaller screens */
   }
 }
 @media screen and (max-width: 576px) {
