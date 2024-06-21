@@ -1,3 +1,13 @@
+@import url(https://db.onlinewebfonts.com/c/75f9043acaec461cf44dcbc86139fb96?family=Agency+FB+W00+Bold);
+@font-face {
+  font-family: "Agency FB W00 Bold";
+  src: url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.eot");
+  src: url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/75f9043acaec461cf44dcbc86139fb96.svg#Agency FB W00 Bold")format("svg");
+}
 
 body {
   font-family: "Open Sans";
@@ -111,7 +121,7 @@ h6,
     font-size: 57px;
     color: white;
     font-weight: bolder;
-    font-family: 'Agency FB'; 
+    font-family: 'Agency FB W00 Bold'; 
     margin-top: 10px; /* Adjust this value as needed */
     position: relative;
 }
@@ -645,7 +655,7 @@ section {
 
 .footer-paragraph {
   margin-top: 10px; /* Add some margin to separate the text from the logo */
-  font-family: 'Agency FB'; 
+  font-family: 'Agency FB W00 Bold'; 
   font-size: 17px;
 }
 
