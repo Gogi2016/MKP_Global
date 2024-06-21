@@ -572,7 +572,7 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo-caption {
-    font-size: 23px;
+    font-size: 18px;
     margin-top: 55px;
   }
 
@@ -584,7 +584,7 @@ section {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .logo-caption {
-    font-size: 28px;
+    font-size: 23px;
     margin-top: 70px;
   }
 
