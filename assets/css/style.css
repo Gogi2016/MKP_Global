@@ -484,10 +484,10 @@ section {
 /* Base styles for the gallery */
 .owl-carousel .item {
   position: relative;
-  margin: -70px; /* Positive margin for spacing between items */
+  margin: 1px; /* Positive margin for spacing between items */
 }
 .owl-carousel .item img {
-  width: 80%;
+  width: 95%;
   border-radius: 20px;
   display: inline-block;
 }
