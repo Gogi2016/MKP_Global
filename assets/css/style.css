@@ -700,12 +700,12 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo-caption {
-    font-size: 20px;
+    font-size: 30px;
     /* Adjusted font size for logo caption */
   }
 
   .footer-paragraph {
-    font-size: 15px;
+    font-size: 25px;
     /* Adjusted font size for footer paragraph */
   }
 }
