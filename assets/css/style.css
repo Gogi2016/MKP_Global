@@ -699,12 +699,12 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo-caption {
-    font-size: 20px;
+    font-size: 23px;
     /* Adjusted font size for logo caption */
   }
 
   .footer-paragraph {
-    font-size: 10px;
+    font-size: 17px;
     /* Adjusted font size for footer paragraph */
   }
 }
@@ -712,12 +712,12 @@ section {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .logo-caption {
-    font-size: 2px;
+    font-size: 28px;
     /* Same font size as extra small, adjusting only if needed */
   }
 
   .footer-paragraph {
-    font-size: 1px;
+    font-size: 17px;
     /* Adjusted font size for footer paragraph */
   }
 }
@@ -725,12 +725,12 @@ section {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo-caption {
-    font-size: 35px;
+    font-size: 32px;
     /* Same font size as smaller sizes, adjusting only if needed */
   }
 
   .footer-paragraph {
-    font-size: 18px;
+    font-size: 16px;
     /* Adjusted font size for footer paragraph */
   }
 }
