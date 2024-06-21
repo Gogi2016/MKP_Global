@@ -492,12 +492,12 @@ section {
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
-  .gallery img {
+  .owl-carousel .item img {
       width: 55%; /* Adjust for smaller screens */
   }
 }
 @media screen and (max-width: 576px) {
-  .gallery img {
+  .owl-carousel .item img {
       width: 100%; /* Full width on smallest screens */
   }
 }
