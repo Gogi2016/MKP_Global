@@ -657,6 +657,7 @@ section {
   margin-top: 10px; /* Add some margin to separate the text from the logo */
   font-family: 'Agency FB W00 Bold'; 
   font-size: 17px;
+  font-weight: bolder;
 }
 
 .footer-text {
@@ -699,12 +700,12 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo-caption {
-    font-size: 18px;
+    font-size: 20px;
     /* Adjusted font size for logo caption */
   }
 
   .footer-paragraph {
-    font-size: 13px;
+    font-size: 15px;
     /* Adjusted font size for footer paragraph */
   }
 }
