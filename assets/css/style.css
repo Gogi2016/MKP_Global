@@ -371,7 +371,66 @@ section {
     width: 100%; /* Full width on smallest screens */
   }
 }
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1px;
+}
 
+.video-container {
+  flex: 1 1 calc(50% - 20px); /* Adjust the width of the video containers */
+  position: relative;
+  margin-bottom: 20px; /* Added to create space between videos */
+}
+
+.responsive-video {
+  width: 95%;
+  height: 500px;
+  border-radius: 20px;
+  aspect-ratio: 16/9; /* Ensures a consistent aspect ratio */
+}
+
+.video-container video {
+  width: 95%;
+  height: 500px; /* Set the desired height */
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .video-container {
+    flex: 1 1 calc(50% - 10px); /* 2 videos per row for tablets and small desktops */
+  }
+  .video-container video {
+    max-height: 310px; /* Adjust the maximum height for medium screens */
+  }
+  .responsive-video{
+    max-height: 310px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex: 1 1 calc(100% - 10px); /* Stack videos vertically on smaller screens */
+  }
+  .video-container video {
+    max-height: 280px; /* Adjust the maximum height for small screens */
+  }
+  .responsive-video{
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container video {
+    max-height: 230px; /* Adjust the maximum height for very small screens */
+  }
+  .responsive-video {
+    max-height: 230;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Us

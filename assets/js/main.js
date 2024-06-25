@@ -106,3 +106,15 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
         }
     });
 });
+
+document.querySelectorAll('.video-container video').forEach(video => {
+    video.addEventListener('click', function() {
+      if (this.muted) {
+        this.muted = false;
+        this.play();
+      } else {
+        this.muted = true;
+      }
+    });
+  });
+  
