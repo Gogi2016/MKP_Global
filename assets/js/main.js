@@ -89,13 +89,18 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
   });
 
   // Gallery
-  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const imageModal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const closeImageSpan = document.getElementsByClassName("close-image")[0];
+  
+    // Initialize Owl Carousel
+    const owl = $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
       autoplay: true,
-      autoplayTimeout: 3000, // Time between slides in milliseconds
+      autoplayTimeout: 3000,
       responsive: {
         0: {
           items: 1
@@ -104,11 +109,34 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
           items: 2
         },
         1000: {
-          items: 3 // Show 3 items per slide on larger screens
+          items: 3
         }
       }
     });
-  });
+  
+    // Listen to click events on owl carousel items
+    owl.on('click', '.owl-item', function(event) {
+      const itemIndex = $(this).index();
+      const imgSrc = $(this).find('img').attr('src');
+      
+      // Open modal with clicked image
+      imageModal.style.display = "block";
+      modalImage.src = imgSrc;
+    });
+  
+    // Close modal functionality
+    closeImageSpan.onclick = function() {
+      imageModal.style.display = "none";
+      modalImage.src = "";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == imageModal) {
+        imageModal.style.display = "none";
+        modalImage.src = "";
+      }
+    }
+  });  
   
   // videos
   document.addEventListener('DOMContentLoaded', (event) => {
