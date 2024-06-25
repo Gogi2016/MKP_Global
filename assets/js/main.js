@@ -91,23 +91,26 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
   // Gallery
   $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 3000, // Time between slides in milliseconds
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            }
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000, // Time between slides in milliseconds
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3 // Show 3 items per slide on larger screens
         }
+      }
     });
-});
-
-document.querySelectorAll('.video-container video').forEach(video => {
+  });
+  
+  document.querySelectorAll('.video-container video').forEach(video => {
     video.addEventListener('click', function() {
       if (this.muted) {
         this.muted = false;
