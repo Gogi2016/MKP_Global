@@ -110,14 +110,38 @@ document.querySelector('.scroll-up-btn').addEventListener('click', () => {
     });
   });
   
-  document.querySelectorAll('.video-container video').forEach(video => {
-    video.addEventListener('click', function() {
-      if (this.muted) {
-        this.muted = false;
-        this.play();
-      } else {
-        this.muted = true;
-      }
+  // videos
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const modal = document.getElementById("videoModal");
+    const modalVideo = document.getElementById("modalVideo");
+    const span = document.getElementsByClassName("close")[0];
+  
+    document.querySelectorAll('.video-container video').forEach(video => {
+      video.addEventListener('click', function() {
+        modal.style.display = "block";
+        const sourceElement = this.querySelector('source') || this.querySelector('iframe'); // handle both video and iframe cases
+        if (sourceElement.tagName.toLowerCase() === 'source') {
+          modalVideo.src = sourceElement.src;
+        } else {
+          modalVideo.src = sourceElement.src;
+        }
+        modalVideo.muted = false; // Ensure video is not muted
+        modalVideo.play();
+      });
     });
+  
+    span.onclick = function() {
+      modal.style.display = "none";
+      modalVideo.pause();
+      modalVideo.src = "";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      }
+    }
   });
   
